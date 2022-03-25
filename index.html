@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Euphoria+Script|Open+Sans+Condensed:300|Raleway&display=swap"
+        rel="stylesheet">
+
+    <title>Visionario</title>
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="ocultar">
+        <a id="btn_1" href="javascript:void(0);" onclick="cambiarSeccion(this);">Inicio</a>
+        <a id="btn_3" href="javascript:void(0);" onclick="cambiarSeccion(this);" class="ocultar">Ganó N1</a>
+        <a id="btn_4" href="javascript:void(0);" onclick="cambiarSeccion(this);" class="ocultar">Perdió N1</a>
+        <a id="btn_7" href="javascript:void(0);" onclick="cambiarSeccion(this);" class="ocultar">Ganó N2</a>
+        <a id="btn_8" href="javascript:void(0);" onclick="cambiarSeccion(this);" class="ocultar">Perdió N2</a>
+        <a id="btn_9" href="javascript:void(0);" onclick="cambiarSeccion(this);" class="ocultar">Ganó N3</a>
+        <a id="btn_10" href="javascript:void(0);" onclick="cambiarSeccion(this);" class="ocultar">Perdió N3</a>
+    </nav>
+    <section id="seccion_1" class=" color1">
+        <img src="img/Ventanas emergentes/imagen1.png" alt="banner" class="fondoPrincipal">
+        <div align="center" class="centradoFijo">
+            <input class="botonEstandarT" type="button" id="btn_2" onclick="cambiarSeccion(this);" value="JUGAR">
+        </div>
+    </section>
+    <section id="seccion_2" class="ocultar color2">
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div align="center">
+            <img src="img/Ventanas emergentes/logo+letra.png" alt="" class="estandarBanner">
+        </div>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+
+        <div align="center">
+            <input class="botonEstandar" type="button" id="btn_13" Value="PRINCIPIANTE" onclick="cambiarSeccion(this);">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <input class="botonEstandar" type="button" id="btn_14" value="INTERMEDIO" onclick="cambiarSeccion(this);">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <input class="botonEstandar" type="button" id="btn_15" value="AVANZADO" onclick="cambiarSeccion(this);">
+        </div>
+        <br><br><br><br>
+        <div align="center">
+            <input class="botonEstandar" type="button" id="btn_8" value="CRÉDITOS" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_3" class="ocultar color3" onclick="cambiarSeccionC('5');">
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div align="center">
+            <img src="img/Ventanas emergentes/bien.png" class="valorBanner">
+        </div>
+        <div class="centradoFijoTexto4">
+            <h1 class="texto3">¡Descubriste el color!</h1>
+        </div>
+        
+    </section>
+
+    <section id="seccion_4" class="ocultar color4" onclick="cambiarSeccionC('2');">
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div align="center">
+            <img src="img/Ventanas emergentes/mal.png" class="valorBanner">
+        </div>
+        <div class="centradoFijoTexto4">
+            <h1 class="texto3">Inténtalo de nuevo</h1>
+        </div>
+    </section>
+
+    <section id="seccion_5" class="ocultar color5">
+        <br><br><br>
+        <h1 class="titulos" id="t_1"></h1>
+        <div align="center">
+
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_1"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_2"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_3"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_4"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_5"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_6"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_7"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_8"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_9"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_10"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_11"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_12"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_13"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_14"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_15"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_16"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_17"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_18"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_19"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_20"></input">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_21"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_22"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_23"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_24"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_25"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_26"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_27"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar(id)" class="boton_n1" id="n1_28"></input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="abajoFijoM">
+            <input class="botonEstandarM" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_6" class="ocultar color6">
+        <h1 class="titulos" id="t_2"></h1>
+        <div align="center">
+            <table>
+                <tr>
+                    <td>
+                        <img id="im2_1" src="" alt="" class="img2">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br> <br>
+        <div align="center">
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_1"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_2"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_3"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_4"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_5"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_6"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_7"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_8"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_9"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar2(id)" class="boton_n2" id="n2_10"></input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>
+            ordenar2();
+        </script>
+        <div class="abajoFijoM">
+            <input class="botonEstandarM" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_7" class="ocultar color7" onclick="cambiarSeccionC('6');">
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div align="center">
+            <img src="img/Ventanas emergentes/bien.png" class="valorBanner">
+        </div>
+        <div class="centradoFijoTexto4">
+            <h1 class="texto3">¡Descubriste la letra!</h1>
+        </div>
+      
+    </section>
+
+    <section id="seccion_8" class="ocultar color8">
+        <div align="center">
+            <img src="img/Ventanas emergentes/fondotexto.png" class="estandarFondoTT">
+        </div>
+        <div align="center" class="centradoFijoTitulo">
+            <h1 class="textoTitulo">CRÉDITOS</h1>
+        </div>
+        <div class="centradoFijoTexto5">
+            <h4 class="texto1">Jose Reyes Ospino</h4>
+        </div>
+        <div class="centradoFijoTexto6">
+            <h4 class="texto2">Ingeniero</h4>
+        </div>
+        <div class="centradoFijoTexto7">
+            <h4 class="texto1">Daniel Carmona Castro</h4>
+        </div>
+        <div class="centradoFijoTexto8">
+            <h4 class="texto2">Diseñador</h4>
+        </div>
+        <div class="centradoFijoMiniB">
+            <input class="botonEstandarP" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_9" class="ocultar color9" onclick="cambiarSeccionC('11');">
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <div align="center">
+            <img src="img/Ventanas emergentes/bien.png" class="valorBanner">
+        </div>
+        <div class="centradoFijoTexto4">
+            <h1 class="texto3">Encontraste el color!</h1>
+        </div>
+    </section>
+
+    <section id="seccion_10" class="ocultar color10">
+        <div align="center">
+            <img src="img/Ventanas emergentes/fondotexto.png" class="estandarFondoTT">
+        </div>
+        <div align="center" class="centradoFijoTitulo">
+            <h1 class="textoTitulo">¡Felicidades!</h1>
+        </div>
+        <div class="centradoFijoTexto1">
+            <h3 class="texto1">Pasaste todos los viajes de este nivel y lo hiciste super bien. Tienes una vista muy
+                buena.</h3>
+        </div>
+        <div class="centradoFijoTexto3">
+            <h1 class="texto3">¡Eres un excelente visionario!</h1>
+        </div>
+        <div class="centradoFijoMiniB">
+            <input class="botonEstandarP" type="button" id="btn_2" value=">" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_11" class="ocultar color11">
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <br><br><br><br><br>
+        <div align="center">
+            <div class="circulo" id="n3_0"></div>
+            <br>
+            <br>
+            <br>
+            <input class="botonEstandarM" type="button" id="btn_12" value=">" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_12" class="ocultar color12">
+        <div align="center">
+            <h1 class="titulos" id="t_3"></h1>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <br><br><br><br><br>
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_1"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_2"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_3"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_4"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_5"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_6"></input>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_7"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_8"></input>
+                    </td>
+                    <td>
+                        <input type="button" onclick="verificar3(id)" class="boton_n3" id="n3_9"></input>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script>ordenar3()</script>
+
+        <div class="abajoFijoM">
+            <input class="botonEstandarM" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+
+    </section>
+
+    <section id="seccion_13" class="ocultar color13">
+        <div align="center">
+            <img src="img/Ventanas emergentes/fondotexto.png" class="estandarFondoTT">
+        </div>
+        <div align="center" class="centradoFijoTitulo">
+            <h1 class="textoTitulo">PRINCIPIANTE</h1>
+        </div>
+        <div class="centradoFijoTexto1">
+            <h3 class="texto1">«Todos los viajes tienen distintos secretos sobre los que el viajero nada sabe»</h3>
+        </div>
+        <div class="centradoFijoTexto2">
+            <h4 class="texto2">Martin Buber</h4>
+        </div>
+        <div class="centradoFijoTexto3">
+            <h1 class="texto3">Descubre el color secreto...</h1>
+        </div>
+        <div class="centradoFijoMiniB">
+            <input class="botonEstandarP" type="button" id="btn_5" value=">" onclick="cambiarSeccion(this);">
+        </div>
+        <div class="abajoFijoM">
+            <input class="botonEstandarM" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+
+    </section>
+
+    <section id="seccion_14" class="ocultar color14">
+        <div align="center">
+            <img src="img/Ventanas emergentes/fondotexto.png" class="estandarFondoTT">
+        </div>
+        <div align="center" class="centradoFijoTitulo">
+            <h1 class="textoTitulo">INTERMEDIO</h1>
+        </div>
+        <div class="centradoFijoTexto1">
+            <h3 class="texto1">«El único verdadero viaje de descubrimiento consiste no en buscar nuevos paisajes, sino
+                en mirar con nuevos ojos»</h3>
+        </div>
+        <div class="centradoFijoTexto2">
+            <h4 class="texto2">Marcel Proust</h4>
+        </div>
+        <div class="centradoFijoTexto3">
+            <h1 class="texto3">Descubre la letra con nuevos ojos...</h1>
+        </div>
+        <h1></h1>
+        <div class="centradoFijoMiniB">
+            <input class="botonEstandarP" type="button" id="btn_6" value=">" onclick="cambiarSeccion(this);">
+        </div>
+        <div class="abajoFijoM">
+            <input class="botonEstandarM" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_15" class="ocultar color15">
+        <div align="center">
+            <img src="img/Ventanas emergentes/fondotexto.png" class="estandarFondoTT">
+        </div>
+        <div align="center" class="centradoFijoTitulo">
+            <h1 class="textoTitulo">AVANZADO</h1>
+        </div>
+        <div class="centradoFijoTexto1">
+            <h3 class="texto1">«Nuestro destino de viaje nunca es un lugar sino una nueva forma de ver las cosas»</h3>
+        </div>
+        <div class="centradoFijoTexto2">
+            <h4 class="texto2">Henry Miller</h4>
+        </div>
+        <div class="centradoFijoTexto3">
+            <h1 class="texto3">Descubre el color que te mostraremos...</h1>
+        </div>
+        <h1></h1>
+        <div class="centradoFijoMiniB">
+            <input class="botonEstandarP" type="button" id="btn_11" value=">" onclick="cambiarSeccion(this);">
+        </div>
+        <div class="abajoFijoM">
+            <input class="botonEstandarM" type="button" id="btn_2" value="←" onclick="cambiarSeccion(this);">
+        </div>
+    </section>
+
+    <section id="seccion_16" class="ocultar color16">
+        <h1>Créditos</h1>
+        <h1>Aquí van los créditos wuu</h1>
+    </section>
+
+</body>
+
+
+</html>
